@@ -148,26 +148,102 @@
     #back_img{
         width:100%;
         height:600px;
-        border:1px solid red
+        border:1px solid white
     }
     #unsplash{
-        border:1px solid blue;
         height:261px;
         width:864px;
         margin:150px 216px 0px 216px
 
     }
     .box2{
-        width:640px;
-            height:30px;
-            border-radius: 30px;
+        width:864px;
+            height:40px;
             background-color: #eeeeee;
             border:1px solid grey;
             display: flex;
             align-items: center;
-            padding:20px;
     }
-    
+    .box2>i{
+            font-size: 20px;
+            color:black;
+
+        }
+        .box2>input{
+            flex:1;
+            height:25px;
+            border:none;
+            outline:none;
+            font-size: 18px;
+            padding-left: 10px;
+            background-color: #eeeeee;
+        }
+        .box2_cont{
+            height:70px
+        }
+        #unsplash_name{
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 55px;
+            margin:0px 0px 16px 0px;
+            /* color:#ffffff */
+        }
+        #unsplash p{
+            line-height: 28px;
+            font-size: 18px;
+            height:28px;
+            width:864px;
+            margin:0px 0px 24px 0px
+        }
+        #first{
+            height:28px;
+            width:864px;
+            line-height: 28px;
+            font-size: 18px;
+            margin:16px 0px 0px 0px;
+        }
+        #trending{
+            height:24px;
+            font-size: 15px;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+        #back_img{
+            background: url("https://images.unsplash.com/photo-1643965304951-07a7ebb783a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHx8&auto=format%2Ccompress&fit=crop&w=1000&h=1000");
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+            /* background-attachment: fixed; */
+            color:#ffffff;
+            opacity:1;
+            font-weight: bold;
+            margin-bottom: 20px;
+        } 
+        #bottom{
+            display:flex;
+            justify-content: space-between;
+            color:#ffffff;
+            margin-top: 120px;
+        } 
+        #right_end>div>img{
+            height:34px;
+            width:150px
+        }
+        .one{
+            margin-top: 40px;
+        }
+        #gallery{
+            width:100%;
+            display:grid;
+            justify-content: space-around;
+            grid-template-columns: repeat(3,30%);
+            gap:2px
+        }
+        #gallery>img{
+            width:100%;
+            height:300px;
+        }
+
     </style>
 </head>
 <body>
@@ -193,7 +269,7 @@
             <div id="upper_right"></div>
             <div id="right_cont">
             <div id="right">
-                <a href="">Log in</a>
+                <a href="login.html">Log in</a>
                 <button id="photo_btn">submit a photo</button>
                 <i class="material-icons">menu</i>
             </div>
@@ -242,30 +318,42 @@
     </div>
     <div id="back_img">
         <div id="unsplash">
-            <span>unsplash</span>
-            <h1>The internet’s source of freely-usable images.</h1>
-            <h1>Powered by creators everywhere.</h1>
+            <span id="unsplash_name">unsplash</span>
+            <h1 id="first">The internet’s source of freely-usable images.</h1>
+            <p>Powered by creators everywhere.</p>
+            <div id="box2_cont"></div>
             <div class="box2">
                 <i class="material-icons">search</i>
                     <input type="text" name="" id="" placeholder="search free-resolution photos">
                     <i class="material-icons">qr_code_scanner</i> 
             </div>
-            <div>Trending:flower,wallpapers,backgrounds,happy,love</div>
+            <div id="trending">Trending:flower,wallpapers,backgrounds,happy,love</div>
+        </div>
+        <div id="bottom">
+          <div class="one">Photo of the Day by 
+            Viacheslav Kvaratskheliia</div>
+          <div class="one">Read more about the Unsplash License</div>
+          <div id="right_end">
+              <div>
+                  <img src="https://images.unsplash.com/file-1606177908946-d1eed1cbe4f5image" alt="">
+              </div>
+              <div>All you need to create a website.</div>
+          </div>
         </div>
     </div>
+    <div id="gallery"></div>
 </body>
 </html>
-<!-- <a href="">Log in</a>
-                <button>submit a photo</button>
-                <i class="material-icons">menu</i> -->
-                <!-- <a href="">Featured <br>Entrepreneur</a>
-                <a href="">walpapers</a>
-                <a href="">3D Renders</a>
-                <a href="">Textures & patterns</a>
-                <a href="">Architecture</a>
-                <a href="">Experimental</a>
-                <a href="">Nature</a>
-                <a href="">Business & work</a>
-                <a href="">Fashion</a>
-                <a href="">Film</a>
-                <a href="">Food & Drink</a> -->
+<script type="module">
+    
+    import data from './scripts/img_data.js'
+    let d=data();
+    function image(){
+        d.map((el)=>{
+            let img=document.createElement("img");
+            img.setAttribute("src",el.img);
+            document.querySelector("#gallery").append(img);
+        })
+    }
+    image();
+</script>
