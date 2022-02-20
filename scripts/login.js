@@ -1,4 +1,4 @@
-let login=JSON.parse(localStorage.getItem("validate"));
+let login=JSON.parse(localStorage.getItem("signup_user"));
 document.querySelector("#sub").addEventListener("submit",check);
 function check(e){
     e.preventDefault();
@@ -12,6 +12,7 @@ function check(e){
        if(logemail==login[i].email&&logpassword==login[i].password){
            flag=true;
            alert("login successful")
+           window.location.href="index.html";
            break;
        } 
     }

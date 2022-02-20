@@ -20,7 +20,6 @@
             height:625px;
             width:539px;
             padding:43px 54px 43px 54px;
-            border:1px solid red
         }
         #signup_right{
             height:620px;
@@ -127,11 +126,46 @@
          color:#767676;
          text-align: center;
      }
+     #signup_left{
+         background: url("https://images.unsplash.com/photo-1645345243302-3504e2f99bb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&w=1000&q=80");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-color: #111111;
+     }
+     #signup_middle{
+         margin-top: 100px;
+         height:206px;
+         width:414px;
+     }
+     #signup_middle h1{
+         height:96px;
+         width:414px;
+         margin:0px 0px 16px 0px;
+         font-size: 48px;
+         font-weight: 700;
+         line-height: 48px;
+         color:#ffffff
+     }
+     #signup_middle h2{
+         height:94px;
+         width:414px;
+         padding:0px 0px 30px 0px;
+         font-size: 24px;
+         line-height: 32px;
+         color:#ffffff
+     }
     </style>
 </head>
 <body>
     <div id="signup_cont">
-        <div id="signup_left"></div>
+        <div id="signup_left">
+            <img src="https://unsplash.com/assets/core/logo-white-8962708214629a3e8f9fbf5b87b70c3ace41c4175cbcc267f7fbb8449ac45bdd.svg" alt="">
+            <div id="signup_middle">
+                <h1>Creation starts here</h1>
+                <h2>Access 3,618,873 free, high-resolution photos you can’t find anywhere else</h2>
+            </div>
+        </div>
         <div id="signup_right">
             <div id="signup_form">
                 <div id="join_unsplash">
@@ -153,15 +187,15 @@
                     </div>
                     <div class="signup_input">
                         <label for="">Email</label>
-                        <input type="text" class="text">
+                        <input type="text" class="text" id="sign_email">
                     </div>
                     <div class="signup_input">
                         <label for="">Username</label>
-                        <input type="text" class="text">
+                        <input type="text" class="text" id="sign_username">
                     </div>
                     <div class="signup_input">
                         <label for="">Password</label>
-                        <input type="text" class="text">
+                        <input type="text" class="text" id="sign_password">
                     </div>
                     <input type="submit" value="Join">
                 </form>
@@ -171,3 +205,4 @@
     </div>
 </body>
 </html>
+<script src="./scripts/signup.js"></script>
