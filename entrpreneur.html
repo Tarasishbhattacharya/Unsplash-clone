@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./component/nav.css">
+    <title>Document</title>
+    <style>
+        #left_right_cont{
+            display:flex;
+            margin-left: 20px;
+            margin-top: 200px;
+            height:324px;
+            width:98%;
+            border:1px solid red;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #left_display{
+            height:324px;
+            width:850px;
+            border:1px solid green
+        }
+        #left_display h1{
+            height:55px;
+            width:850px;
+            margin:0px 0px 16px 0px;
+            font-size: 46px;
+        }
+        #left_display h2{
+            border:1px solid red;
+            height:124px;
+            width:620px;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight:400;
+        }
+        #left_display p{
+            height:28px;
+            width:620px;
+            margin:16px 0px 16px 0px;
+            font-size: 18px;
+        }
+        #left_display a{
+            color:#767676;
+            text-decoration: underline solid rgb(118,118,118);
+        }
+        #right_display{
+            margin-top: 15px;
+            margin-left: 30px;
+            height:229px;
+            width:416px;
+            border:1px solid #D1D1D1;
+            padding:24px 24px 24px 24px;
+        }
+        #right_display>div{
+            height:32px;
+            width:366px;
+            border:1px solid aqua;
+            margin-top: 10px;
+            
+        }
+        .right_display_underline{
+            height: 1px;
+            width:366px;
+            background-color: #EEEEEE;
+            color:#111111;
+        }
+        .flx{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        i{
+            height:12px;
+            width:18px;
+            margin:0px 8px 0px 0px
+        }
+        .right_display_left{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav_display"></div>
+    <div id="left_right_cont">
+        <div id="left_display">
+            <h1>Entrepreneur</h1>
+            <h2>Microsoft Surface is taking over the Entrepreneur Topic to applaud the 
+                tireless effort that goes into owning a business. For the month of February, 
+                submit images from any part of the entrepreneurial journey — from starting on your couch with a laptop, 
+                to working late with endless cups of coffee, to commanding a board meeting for your employees.</h2>
+            <p>Learn more <a href="">here</a></p>
+        </div>
+        <div id="right_display">
+            <div class="flx">
+                <div class="right_display_left">
+                    <i class="material-icons">battery_charging_full</i><a>status</a>
+                </div>
+                <div>
+                    <input type="radio" name="" id="">&nbsp;&nbsp;<a>open</a>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>       
+        </div>
+    </div>
+</body>
+</html>
+<script type="module">
+    import nav from './component/navbar.js'
+    var show=document.querySelector("#nav_display");
+    show.innerHTML=nav();
+</script>
