@@ -13,7 +13,7 @@ function nav(){
         </div>
         <div id="list">
             <div>
-                <a href="">Explore</a>
+                <a href="/explore.html">Explore</a>
                 <a href="">Advertise</a>
                 <a href="">Blog</a>
             </div>
