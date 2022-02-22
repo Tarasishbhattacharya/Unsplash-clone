@@ -149,12 +149,9 @@
     <div>
     <div id="left_right_cont">
         <div id="left_display">
-            <h1>Entrepreneur</h1>
-            <h2>Microsoft Surface is taking over the Entrepreneur Topic to applaud the 
-                tireless effort that goes into owning a business. For the month of February, 
-                submit images from any part of the entrepreneurial journey — from starting on your couch with a laptop, 
-                to working late with endless cups of coffee, to commanding a board meeting for your employees.</h2>
-            <p>Learn more <a href="">here</a></p>
+            <h1>Architecture</h1>
+            <h2>Explore exteriors from around the world — from brutalist buildings to minimalist structures that will give you a new appreciation for the art of architecture.</h2>
+            <!-- <p>Learn more <a href="">here</a></p> -->
         </div>
         <div id="right_display">
             <div>
@@ -174,7 +171,7 @@
                     <i class="material-icons">person</i><a>curator</a>
                 </div>
                 <div>
-                   <img src="https://images.unsplash.com/profile-1587651800415-20eed2ec0209image?auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff" alt="" id="right_img">
+                   <img src="https://images.unsplash.com/profile-1544707963613-16baf868f301?auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff" alt="" id="right_img">
                 </div>
             </div>
             <div class="right_display_underline"></div>
@@ -185,36 +182,36 @@
                     <i class="material-icons">image</i><a>contribution</a>
                 </div>
                 <div>
-                   <a >32</a>
+                   <a >9.7K</a>
                 </div>
             </div>
             <div class="right_display_underline"></div>
         </div>
             <div  class="flx">
                 <div class="right_display_left">
-                    <i class="material-icons">group</i><a> Top contributor</a>
+                    <i class="material-icons">group</i><a>Top contributor</a>
                 </div>
                 <div class="img_flx">
-                   <img src="https://images.unsplash.com/profile-1587651800415-20eed2ec0209image?auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff" alt="">
-                   <img src="https://images.unsplash.com/profile-1643610318911-499d8c82e874image?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
-                   <img src="https://images.unsplash.com/profile-1601327292565-cc4c02215d36image?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
-                   <img src="https://images.unsplash.com/profile-1462130890488-77bd27f193d8?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
-                   <img src="https://images.unsplash.com/profile-1610059084034-fa13cd9ae449image?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
+                   <img src="https://images.unsplash.com/profile-1505896116223-c60402aa89aa?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
+                   <img src="https://images.unsplash.com/profile-1492187901140-48ac7eff801c?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
+                   <img src="https://images.unsplash.com/profile-1634908267551-69d94ebecf43image?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
+                   <img src="https://images.unsplash.com/profile-1634908267551-69d94ebecf43image?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
+                   <img src="https://images.unsplash.com/profile-1631577432737-bd4d6a1e42a7image?auto=format&fit=crop&w=16&h=16&q=60&crop=faces&bg=fff" alt="">
                 </div>
             </div>     
         </div>
 </div>
-<button class="sub_btn">submit to Entrepreneur</button>
+<button class="sub_btn">submit to Architecture</button>
 </div>
 <div id="show_img"></div>
 </body>
 </html>
 <script type="module">
-    import pages_data from './scripts/pages_data.js'
+    import architect_data from './scripts/architect_data.js'
     import nav from './component/navbar.js'
     var show=document.querySelector("#nav_display");
     show.innerHTML=nav();
-    let d=pages_data();
+    let d=architect_data();
    let show_img=()=>{
        d.map((el)=>{
         let img=document.createElement("img");

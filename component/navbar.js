@@ -34,13 +34,13 @@ function nav(){
             <a href="/entrpreneur.html"  class="border">
                 <span>Featured <br><span id="entrpreneur">Entrepreneur</span></span>
             </a>
-            <a href="" class="border">
+            <a href="/render.html" class="border">
                 <span>3D Renders</span>
             </a>
-            <a href="" class="border">
+            <a href="/texture.html" class="border">
                 <span>Textures & patterns</span>
             </a>
-            <a href="" class="border">
+            <a href="/architect.html" class="border">
                 <span>Architecture</span>
             </a>
             <a href="" class="border">
