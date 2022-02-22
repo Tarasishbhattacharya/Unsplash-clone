@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
         *{
@@ -117,7 +118,6 @@ outline:none
     margin-top: 130px;
     height:195px;
     width:856px;
-    border:1px solid red;
     color:#111111;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -144,18 +144,177 @@ outline:none
     color:#767676
 }
 #browse_img{
-    margin:20px 0px 20px 10px;
+    margin:20px 0px 20px 20px;
     height:290px;
     width:97%;
-    border:1px solid red;
     display: flex;
     justify-content: space-between;
 }
 #browse_img>div{
     height:290px;
     width:416px;
-    border:1px solid blue;
 }
+.b_img{
+    height:208px;
+    width:416px;
+    border:1px solid #ffffff;
+}
+#img1{
+    background: url("https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=440&h=220&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img2{
+    background: url("https://images.unsplash.com/photo-1448387473223-5c37445527e7?auto=format&fit=crop&w=440&h=220&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img3{
+    background: url("https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&w=440&h=220&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.b_img> p{
+    font-size: 21px;
+    height:28px;
+    /* width:105px; */
+    margin:100px 0px 16px 0px;
+    color:#ffffff;
+    text-align: center;
+}
+
+.download{
+    height:24px;
+    width:416px;
+    margin:16px 0px 16px 0px;
+    color:#111111;
+    font-size: 17px;
+}
+.back{
+    height:34px;
+    width:424px;
+    margin:0px 0px -4px -3px
+}
+.back a{
+    height:26px;
+    width:152px;
+    padding:0px 8px 0px 8px;
+    margin-left: 5px;
+    background-color: #EEEEEE;
+    color:#767676
+}
+#browse_title{
+    height:33px;
+    width:1296px;
+    margin:0px 0px 32px 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+#show_img{
+        width:100%;
+        display:grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3,30%);
+        gap:2px
+    }
+    #show_img>img{
+        width:100%;
+        height:300px;
+     }
+     .free{
+       height:33px;
+       width:1296px;
+       margin:15px 0px 32px 20px;
+       font-size: 28px;
+       font-weight: 700;
+     }
+     #footer_cont{
+         height:617px;
+         width:97%;
+         margin:40px 10px 0px 10px;
+         padding:96px 6px 40px 6px;
+     }
+     #footer{
+         display:flex;
+         justify-content: space-between;
+         height: 376px;
+         width:97%;
+     }
+     #first_col{
+         height:376px;
+         width:431px;
+     }
+     #first_col> p{
+         height: 72px;
+         width: 431px;
+         margin: 0px 0px 24px 0px;
+         font-size: 16px;
+         line-height: 24px;
+     }
+     #first_col_list{
+         height:216px;
+         width:431px;
+         margin:0px 0px 24px 0px;
+         list-style-type: none;
+     }
+     #first_col_list li{
+         height:24px;
+         width:431px;
+         margin:0px 0px 8px 0px;
+         color:#767676
+     }
+     #first_col_list li a{
+        color:#767676;
+        text-decoration: none;
+     }
+     .col{
+        height:376px;
+         width:251px; 
+     }
+     .name{
+         height:24px;
+         width:251px;
+         margin:0px 0px 16px 0px;
+         font-size: 15px;
+         font-weight: 700;
+     }
+     #second_col_list{
+         height: 152px;
+         width:251px;
+         margin:0px 0px 24px 0px;
+         list-style-type: none;
+     }
+     #second_col_list li{
+        height:24px;
+         width:431px;
+         margin:0px 0px 8px 0px;
+     }
+     #second_col_list li a{
+        color:#767676;
+        text-decoration: none;
+     }
+     #footer_lower{
+         display:flex;
+         justify-content: space-between;
+         height:73px;
+         width:1296px;
+         margin:32px 0px 0px 0px;
+         padding:24px 0px 24px 0px;
+         border-top: 1px solid #D1D1D1;
+     }
+    #footer_lower_left a{
+        margin-left: 9px;
+        color:#767676
+    }
+    #footer_lower_right i{
+        margin-left: 9px;
+        color:#767676
+    }
+
 </style>
 </head>
 <body>
@@ -175,7 +334,7 @@ outline:none
                 <div>
                     <a href="">Explore</a>
                     <a href="">Advertise</a>
-                    <a href="">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </div>
             </div>
             <div id="upper_right"></div>
@@ -195,24 +354,118 @@ outline:none
            All photos here are free to download and use under the <a>Unsplash License.</a></p>
     </div>
     <div id="browse">
-        <h2></h2>
+        <h2 id="browse_title">Browse thousands of free images on Unsplash</h2>
         <div id="browse_img">
             <div>
-                <div class="b_img"></div>
-                <p class="download"></p>
-                <div class="back"></div>
+                <div class="b_img" id="img1">
+                    <p class="background">Backgrounds</p>
+                </div>
+                <p class="download">Download free desktop and mobile backgrounds.</p>
+                <div class="back">
+                    <a >Cool Backgrounds</a>
+                    <a >Desktop Backgrounds</a>
+                </div>
             </div>
             <div>
-                <div class="b_img"></div>
-                <p class="download"></p>
-                <div class="back"></div>
+                <div class="b_img" id="img2">
+                    <p>Images</p>
+                </div>
+                <p class="download">Download amazing photos and pictures for free.</p>
+                <div class="back">
+                    <a >Free Stock Photos</a>
+                    <a >Nature Images</a>
+                </div>
             </div>
             <div>
-                <div class="b_img"></div>
-                <p class="download"></p>
-                <div class="back"></div>
+                <div class="b_img" id="img3">
+                    <p>walpapers</p>
+                </div>
+                <p class="download">Discover your next desktop or mobile wallpaper.</p>
+                <div class="back">
+                    <a >IPhone Wallpapers</a>
+                    <a >Cool Wallpapers</a>
+                </div>
             </div>
         </div>
     </div>
+    <h2 class="free">Free high-resolution Unsplash photos</h2>
+    <div id="show_img"></div>
+    <div id="footer_cont">
+     <div id="footer">
+         <div id="first_col">
+             <h6 class="name">Unspalsh</h6>
+             <p>Beautiful, free images gifted by the world’s most generous community of photographers. 
+                 Better than any royalty free or stock photos.</p>
+                 <ul id="first_col_list">
+                     <li><a href="">About</a></li>
+                     <li><a href="">Blog</a></li>
+                     <li><a href="">community</a></li>
+                     <li><a href="">Join the team</a></li>
+                     <li><a href="">Developer API</a></li>
+                     <li><a href="">Help center</a></li>
+                 </ul>
+         </div>
+         <div class="col">
+            <h6 class="name">Product</h6>
+            <ul id="second_col_list">
+                <li><a href="">Explore</a></li>
+                <li><a href="">Unsplash awards</a></li>
+                <li><a href="">Unsplash for education</a></li>
+                <li><a href="">unsplash for IOS</a></li>
+                <li><a href="">official apps</a></li>
+            </ul>
+         </div>
+         <div class="col">
+            <h6 class="name">popular</h6>
+            <ul id="second_col_list">
+                <li><a href="">Background</a></li>
+                <li><a href="">free images</a></li>
+                <li><a href="">Free stock photos</a></li>
+                <li><a href="">Happy birthday image</a></li>
+                <li><a href="">cool photos</a></li>
+                <li><a href="">Nature picture</a></li>
+                <li><a href="">white background</a></li>
+                <li><a href="">black background</a></li>
+                <li><a href="">Texture</a></li>
+                <li><a href="">Desktop  background</a></li>
+            </ul>
+         </div>
+         <div class="col">
+            <h6 class="name">walpaper</h6>
+            <ul id="second_col_list">
+                <li><a href="">Explore</a></li>
+                <li><a href="">Unsplash awards</a></li>
+                <li><a href="">Unsplash for education</a></li>
+                <li><a href="">unsplash for IOS</a></li>
+                <li><a href="">official apps</a></li>
+            </ul>
+         </div>
+     </div>
+     <div id="footer_lower">
+         <div id="footer_lower_left">
+             <a >Privacy policy</a>
+             <a >Terms</a>
+             <a >secuirity</a>
+         </div>
+         <div id="footer_lower_right">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+         </div>
+     </div>
+    </div>
 </body>
 </html>
+<script type="module">
+    import explore_data from './scripts/explore_data.js'
+
+    let d=explore_data();
+   let show_img=()=>{
+       d.map((el)=>{
+        let img=document.createElement("img");
+            img.setAttribute("src",el.img);
+            document.querySelector("#show_img").append(img);
+       })
+   }
+   show_img();
+</script>

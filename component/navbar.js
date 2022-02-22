@@ -15,7 +15,7 @@ function nav(){
             <div>
                 <a href="/explore.html">Explore</a>
                 <a href="">Advertise</a>
-                <a href="">Blog</a>
+                <a href="/blog.html">Blog</a>
             </div>
         </div>
         <div id="upper_right"></div>
