@@ -5,7 +5,7 @@ function gridcard(){
        <div>
            <img src="https://unsplash.com/blog/content/images/size/w600/2022/01/Entrepreneur-Banner--Blog-.jpg" alt="">
            <p>Anouncements</p>
-           <h1>2021 in review</h1>
+           <h1>unsplash + surface</h1>
            <div>
                <a >Natalia Bernan</a>
                <a>January 5,2022</a>
@@ -14,7 +14,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2022/02/op-4--Blog--1.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>Incredible ways images on unsplash have been used</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -23,7 +23,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2022/01/MadeWithUnsplash--Blog-.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>Behind 1 billion: Toa Heftiboa</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -32,7 +32,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/toa-heftiba-un7YJskhpl4-unsplash-2.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>Unsplash + Tezos</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -41,7 +41,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/blockchain--Blog--1.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>Top 10: Walpapers</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -50,7 +50,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/Wallpapers-Winner--Blog--1.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>unsplash + surface</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -59,7 +59,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/holidays_-Blog--1.jpeg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>Download history</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -68,7 +68,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2021/11/Wallpapers-blog-1.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>What's new on IOS</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -77,7 +77,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2021/10/op8-1.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>unsplash + Herchal</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>
@@ -86,7 +86,7 @@ function gridcard(){
        <div>
         <img src="https://unsplash.com/blog/content/images/size/w600/2021/10/Cover.jpg" alt="">
         <p>Anouncements</p>
-        <h1>2021 in review</h1>
+        <h1>Unsplash Awards 2021</h1>
         <div>
             <a >Natalia Bernan</a>
             <a>January 5,2022</a>

@@ -14,7 +14,7 @@ function nav(){
         <div id="list">
             <div>
                 <a href="/explore.html">Explore</a>
-                <a href="">Advertise</a>
+                <a href="/advertisement.html">Advertise</a>
                 <a href="/blog.html">Blog</a>
             </div>
         </div>
