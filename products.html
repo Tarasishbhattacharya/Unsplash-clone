@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/blog_navbar.css">
+</head>
+<body>
+    <div id="blog"></div>
+    <div id="middle"></div>
+    <div id="card"></div>
+</body>
+</html>
+<script type="module">
+    import blog_nav from './component/blog_navbar.js'
+    import middle from './component/blog_middle.js';
+    import gridcard from './component/blog_grid.js';
+    var blog=document.querySelector("#blog");
+    blog.innerHTML=blog_nav();
+    var blogmiddle=document.querySelector("#middle");
+    blogmiddle.innerHTML=middle();
+    var card=document.querySelector("#card");
+    card.innerHTML=gridcard();
+</script>

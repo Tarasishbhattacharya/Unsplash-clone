@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/blog_navbar.css">
     <style>
-        *{
+        /* *{
             padding:0;
             margin:0;
             box-sizing: border-box;
@@ -14,9 +15,6 @@
         #blog_navbar{
             display: flex;
             align-items: center;
-            position: fixed;
-            top:0;
-            right:0;
             height:62px;
             width:1340px;
             padding:10px 8px 0px 8px;
@@ -68,10 +66,133 @@
             color:#767676;
             margin:10px 0px 8px 0px;
         }
+        h3{
+            height:52px;
+            margin:0px 0px 40px 30px;
+            font-size: 40px;
+            font-weight: 800;
+        }
+        #two_img{
+            display:flex;
+            justify-content: space-between;
+            height:577px;
+            width:1296px;
+            margin-left: 30px;
+        }
+        #two_img>div{
+          height:575px;
+          width:634px;
+          border:1px solid #767676
+
+        }
+        #two_img>div>img{
+            height:380px;
+            width:634px
+        }
+        #two_img>div>p{
+            padding:5px;
+            margin:10px 0px 20px 8px;
+            font-size: 16px;
+        }
+        #two_img>div>h1{
+            height:50px;
+            width:400px;
+            margin-left: 10px;
+            margin-bottom: 60px;
+            font-size: 35px;
+            margin-top: -15px;
+        }
+        #two_img>div>div>a{
+            margin-left: 20px;
+            color: #767676;
+            font-size: 17px;
+        }
+        #grid_cont{
+            height:2355px;
+            width:1320px;
+            margin:70px 15px 0px 15px;
+            padding:0px 12px 0px 12px;
+        }
+        #grid_cont>h3{
+            height:52px;
+            margin:0px 0px 40px 20px;
+            font-size: 40px;
+            font-weight: 800;
+        }
+        #grid_card{
+            display:grid;
+            grid-template-columns: repeat(3,414px);
+            grid-gap: 10px;
+            height:2087px;
+            width:1296px;
+
+        }
+        #grid_card>div{
+            border:2px solid #EEEEEE;
+            height:401px;
+        }
+        #grid_card>div>img{
+            width:414px;
+            height:200px
+        }
+        #grid_card>div>p{
+            padding:5px;
+            margin:10px 0px 20px 8px;
+            font-size: 16px; 
+        }
+        #grid_card>div>h1{
+            height:50px;
+            width:400px;
+            margin-left: 10px;
+            margin-bottom: 60px;
+            font-size: 35px;
+            margin-top: -15px;
+        }
+        #grid_card>div>div>a{
+            margin-left: 20px;
+            color: #767676;
+            font-size: 17px;
+        }
+        #lower_btn{
+            height:176px;
+            width:1296px;
+            padding:72px 0px 56px 0px
+        }
+        #lower_btn>button{
+            height:48px;
+            width:153px;
+            border:1px solid #D1D1D1;
+            color:#767676;
+            background-color: #ffffff;
+            text-align: center;
+            vertical-align: middle;
+            margin-left: 600px;
+        }
+        #blog_footer{
+            display:flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-bottom: 50px;
+            height:73px;
+            width:1296px;
+            padding:32px 0px 0px 0px;
+            border-top: 1px solid #D1D1D1;
+        }
+        #blog_footer>div>img{
+            height:40px;
+            width:40px;
+            vertical-align: middle;
+        }
+        #blog_footer>div>a{
+            margin-left: 20px;
+            color:#767676;
+        } */
     </style>
 </head>
 <body>
-    <div id="blog_navbar">
+    <div id="blog"></div>
+    <!-- <div id="blog_navbar">
         <div id="blog_navbar_logo">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEX///8AAAD39/eVlZVhYWHt7e2YmJisrKydnZ3AwMAuLi7V1dWoqKibm5v09PSQkJB1dXUdHR1aWlrVATWbAAABDklEQVR4nO3ZSxaCMAxAUUUFFfG3/8U6t5OAVVLPvQvIyeuw2WwAAAAAAAAAAAAAAELG/hjVj2svu8hlG3dZe9lFhhmFw9rLLqJQYX4KFeanUGF+ChXmp1BhfgoV5qdQYX4KFeanUGF+Ctsv/P/r2jiFL6RTmxdSAAAAIL3rIeC65sAPdbfI79JuxsRdZOCt+1rRuy60UD9jYh96MoX1KFRYUqiwNoUKSwoV1qZQYUmhwtoUKiwpVFibQoUlhQprU6iw1GbhNGPi1GTh/RR3b7LwcY57NFlYnUKFChUqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFLRYOz/3vPYffFQIAAAAAAAAAAAAAAPyxF6hYLRF9pu91AAAAAElFTkSuQmCC" alt="">
 
@@ -87,11 +208,198 @@
             </ul>
         </div>
         <div id="blog_navbar_right">unsplash.com</div>
-    </div>
-    <div id="unsplash_blog">
+    </div> -->
+    <!-- <div id="unsplash_blog">
         <h1>Unsplash Blog</h1>
         <h2>Stories from the community powering the internet’s visuals</h2>
-    </div>
+    </div> -->
+    <div id="middle"></div>
     <h3>Featured</h3>
+    <div id="two_img">
+        <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2022/01/yir.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+        <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/11/Finalists-Announcement-blog-1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>unsplash Awards 2021 selection</h1>
+            <div>
+                <a >unsplash Team</a>
+                <a>November 5,2022</a>
+            </div>
+        </div>
+    </div>
+    <div id="card"></div>
+    <!-- <div id="grid_cont">
+        <h3>Latest from the team</h3>
+       <div id="grid_card">
+           <div>
+               <img src="https://unsplash.com/blog/content/images/size/w600/2022/01/Entrepreneur-Banner--Blog-.jpg" alt="">
+               <p>Anouncements</p>
+               <h1>2021 in review</h1>
+               <div>
+                   <a >Natalia Bernan</a>
+                   <a>January 5,2022</a>
+               </div>
+            </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2022/02/op-4--Blog--1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2022/01/MadeWithUnsplash--Blog-.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/toa-heftiba-un7YJskhpl4-unsplash-2.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/blockchain--Blog--1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/Wallpapers-Winner--Blog--1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/12/holidays_-Blog--1.jpeg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/11/Wallpapers-blog-1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/10/op8-1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/10/Cover.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/10/Back-to-School-Banner-blog-2.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/09/3D-Banner--Blog-.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/09/Blog-Cover-blog-1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/09/Back_to_School-blog-1.jpeg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+           <div>
+            <img src="https://unsplash.com/blog/content/images/size/w600/2021/08/pawel-czerwinski-IskA3TGmyGk-unsplash-1.jpg" alt="">
+            <p>Anouncements</p>
+            <h1>2021 in review</h1>
+            <div>
+                <a >Natalia Bernan</a>
+                <a>January 5,2022</a>
+            </div>
+        </div>
+       </div>
+       <div id="lower_btn">
+           <button>Load more pposts</button>
+       </div>
+    </div>
+    <div id="blog_footer">
+        <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEX///8AAAD39/eVlZVhYWHt7e2YmJisrKydnZ3AwMAuLi7V1dWoqKibm5v09PSQkJB1dXUdHR1aWlrVATWbAAABDklEQVR4nO3ZSxaCMAxAUUUFFfG3/8U6t5OAVVLPvQvIyeuw2WwAAAAAAAAAAAAAAELG/hjVj2svu8hlG3dZe9lFhhmFw9rLLqJQYX4KFeanUGF+ChXmp1BhfgoV5qdQYX4KFeanUGF+Ctsv/P/r2jiFL6RTmxdSAAAAIL3rIeC65sAPdbfI79JuxsRdZOCt+1rRuy60UD9jYh96MoX1KFRYUqiwNoUKSwoV1qZQYUmhwtoUKiwpVFibQoUlhQprU6iw1GbhNGPi1GTh/RR3b7LwcY57NFlYnUKFChUqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFLRYOz/3vPYffFQIAAAAAAAAAAAAAAPyxF6hYLRF9pu91AAAAAElFTkSuQmCC" alt="">
+            <span>Make something awesome</span>
+        </div>
+        <div>
+            <a >About</a>
+            <a >Press</a>
+            <a >Join the Team</a>
+        </div>
+    </div> -->
 </body>
 </html>
+<script type="module">
+    import blog_nav from './component/blog_navbar.js'
+    import middle from './component/blog_middle.js';
+    import gridcard from './component/blog_grid.js';
+    var blog=document.querySelector("#blog");
+    blog.innerHTML=blog_nav();
+    var blogmiddle=document.querySelector("#middle");
+    blogmiddle.innerHTML=middle();
+    var card=document.querySelector("#card");
+    card.innerHTML=gridcard();
+</script>
