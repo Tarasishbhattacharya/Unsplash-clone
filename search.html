@@ -8,46 +8,219 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>Document</title>
     <style>
-        *{
-            padding: 0;
-            margin:0;
-            box-sizing: border-box;
-        }
-        body{
-            height:100vh;
-            display:flex;
-        }
-        .box{
-            width:500px;
-            height:50px;
-            border-radius: 30px;
-            background-color: grey;
-            border:1px solid grey;
-            display: flex;
-            align-items: center;
-            padding:20px;
-        }
-        .box>i{
-            font-size: 20px;
-            color:black;
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .box{
+        margin-left: 25px;
+        margin-right: 40px;
+        margin-top: 8px;
+        width:640px;
+        height:30px;
+        border-radius: 30px;
+        background-color: #eeeeee;
+        border:1px solid grey;
+        display: flex;
+        align-items: center;
+        padding:20px;
+    }
+    .box>i{
+        font-size: 20px;
+        color:black;
+    
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+    .box>input{
+        flex:1;
+        height:25px;
+        border:none;
+        outline:none;
+        font-size: 18px;
+        padding-left: 10px;
+        background-color: #eeeeee;
+    }
+    #nav_container{
+        position: fixed;
+        top:0;
+        right:0;
+        font-size: 16px;
+        width:100%;
+        height:140px;
+        border:1px solid #767676;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #ffffff;
+    }
+    #upper{
+        width:90%;
+        display:flex;
+    }
+    #logo{
+      width:19%
+    }
+    #logo img{
+      height:65px;
+      width:100%;
+      margin-left: 10px;
+    }
+    #list{
+    margin-left: 10px;
+    display:flex;
+    font-size: 14px;
+    align-items: center;
+    width:140%;
+    margin-bottom: 14px;
+    }
+    #list >div> a{
+    margin: 14px;
+    color:#767676;
+    text-decoration: none;
+    }
+    #upper_right{
+    height:32px;
+    width:1px;
+    color:black;
+    background-color: #d1d1d1;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 18px;
+    }
+    #right_cont{
+    width:100%;
+    }
+    #right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 6px;
+    padding:10px;
+    width:155%;
+    color:#767676
+    }
+    #right a{
+    text-decoration: none;
+    color:#767676
+    }
+    #photo_btn{
+    padding:8px;
+    background-color: #ffffff;
+    color: #767676;
+    border: 1px solid #767676;
+    outline:none
+    }
+    #lower{
+    display:flex;
+    justify-content: space-between;
+    height:60px;
+    width:100%;
+    }
+    #lower div{
+        display: flex;
+    }
+    #lower_first>div{
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+    #lower_first>div>a{
+        text-decoration: none;
+        color:#767676
+    }
+    #lower_first>div>i{
+        color:#767676
+    }
+    #lower_first>div>i:hover{
+        color:#111111;
+    }
+    #lower_second{
+        margin-top: 25px;
+        margin-right: 10px;
+    }
+    #lower_second>a{
+        margin-left: 8px;
+        text-decoration: none;
+        color:#767676
+    }
+    #show_searchData{
+        margin-top: 150px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2,47%);
+        grid-gap: 5px;
+    }
+    #show_searchData img{
 
-        }
-        .box>input{
-            flex:1;
-            height:40px;
-            border:none;
-            outline:none;
-            font-size: 18px;
-            padding-left: 10px;
-            background-color: grey;
-        }
-    </style>
+        height:auto;
+        width:100%
+    }
+
+    
+</style>
 </head>
 <body>
-    <h1>search box</h1>
-    <div class="box">
-    <i class="material-icons">search</i>
-        <input type="text" name="" id="">
+    <div id="nav_container">
+        <div id="upper">
+            <div id="logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEX///8AAAD39/eVlZVhYWHt7e2YmJisrKydnZ3AwMAuLi7V1dWoqKibm5v09PSQkJB1dXUdHR1aWlrVATWbAAABDklEQVR4nO3ZSxaCMAxAUUUFFfG3/8U6t5OAVVLPvQvIyeuw2WwAAAAAAAAAAAAAAELG/hjVj2svu8hlG3dZe9lFhhmFw9rLLqJQYX4KFeanUGF+ChXmp1BhfgoV5qdQYX4KFeanUGF+Ctsv/P/r2jiFL6RTmxdSAAAAIL3rIeC65sAPdbfI79JuxsRdZOCt+1rRuy60UD9jYh96MoX1KFRYUqiwNoUKSwoV1qZQYUmhwtoUKiwpVFibQoUlhQprU6iw1GbhNGPi1GTh/RR3b7LwcY57NFlYnUKFChUqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFLRYOz/3vPYffFQIAAAAAAAAAAAAAAPyxF6hYLRF9pu91AAAAAElFTkSuQmCC" alt="logo">
+            </div>
+            <div id="box_cont">
+                <div class="box">
+                    <i class="material-icons">search</i>
+                        <input type="text" name="" id="" placeholder="search free-resolution photos">
+                        <i class="material-icons">qr_code_scanner</i> 
+                </div>
+            </div>
+            <div id="list">
+                <div>
+                    <a href="/explore.html">Explore</a>
+                    <a href="/advertisement.html">Advertise</a>
+                    <a href="/blog.html">Blog</a>
+                </div>
+            </div>
+            <div id="upper_right"></div>
+            <div id="right_cont">
+            <div id="right">
+                <a href="login.html">Log in</a>
+                <button id="photo_btn">submit a photo</button>
+                <i class="material-icons">menu</i>
+            </div>
+        </div>
+        </div>
+        <div id="lower">
+            <div id="lower_first">
+                <div>
+                    <i class="material-icons">crop_original</i>
+                    <a href="">photos 1.7k</a>
+                </div>
+                <div> <i class="material-icons">library_books</i>
+                    <a href="">collections 377</a>
+                </div>
+                <div>
+                    <i class="material-icons">people</i>
+                    <a href="">users 78</a>
+                </div>
+            </div>
+            <div  id="lower_second">
+                <a href="">Any orientations</a>
+                <a href="">Any color</a>
+                <a href="">sort by relevence</a>
+            </div>
+        </div>
     </div>
+    <div id="show_searchData"></div>
 </body>
 </html>
+<script type="module">
+   import {apicall,append} from './component/api.js';
+   let search_value=(localStorage.getItem("search"));
+   let location=document.querySelector("#show_searchData");
+   let data=apicall(`https://api.unsplash.com/search/photos?query=${search_value}&client_id=MlPc3wXlkc-7cNoNu4GO9NUYriV1z0xmjg4wYHaZJdY&count=30`);
+   data.then((res)=>{
+       console.log(res)
+       append(res.results,location);
+   })
+</script>

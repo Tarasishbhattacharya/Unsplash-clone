@@ -7,7 +7,7 @@ function nav(){
         <div id="box_cont">
             <div class="box">
                 <i class="material-icons">search</i>
-                    <input type="text" name="" id="" placeholder="search free-resolution photos">
+                    <input type="text" name="" id="searchbox" placeholder="search free-resolution photos">
                     <i class="material-icons">qr_code_scanner</i> 
             </div>
         </div>

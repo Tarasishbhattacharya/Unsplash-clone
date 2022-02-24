@@ -56,4 +56,13 @@
         e.preventDeafult();
         console.log("here");
     })
+    document.querySelector("#searchbox").addEventListener("keypress",(e)=>{
+       if(e.key=="Enter"){
+           var value=document.querySelector("#searchbox").value;
+          localStorage.setItem("search",JSON.stringify(value));
+          window.location.href="search.html";
+       }
+    })
+    // https://api.unsplash.com/photos/?client_id=MlPc3wXlkc-7cNoNu4GO9NUYriV1z0xmjg4wYHaZJdY&query=cricket
+    // MlPc3wXlkc-7cNoNu4GO9NUYriV1z0xmjg4wYHaZJdY
 </script>
